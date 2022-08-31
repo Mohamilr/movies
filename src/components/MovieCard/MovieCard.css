@@ -14,7 +14,7 @@
 
 .movie__card img {
     width: 300px;
-    height: 380px;
+    height: 300px;
     border-radius: 20px;
 }
 
@@ -22,17 +22,21 @@
     color: var(--text);
 }
 
+.movie--plot {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text);
+}
+
 .movie__card .movie--meta__data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 10px;
 }
 
 .movie__card .movie--meta__data span {
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text);
+    display: block;
 }
 
 
@@ -43,6 +47,6 @@
     
     .movie__card img {
         width: 200px;
-        height: 245px;
+        height: 215px;
     }
 }

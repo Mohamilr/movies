@@ -27,6 +27,28 @@
     margin-top: 10px;
 }
 
+.modal__body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__body .status {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text)
+}
+
+.modal__body .error {
+    cursor: pointer;
+    color: var(--error)
+} 
+
 .close__modal {
     color: var(--text);
     font-size: 17px;
@@ -34,6 +56,9 @@
     cursor: pointer;
     text-align: right;
     padding-bottom: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .modal__content > span  {
@@ -42,6 +67,8 @@
     font-size: 17px;
     font-weight: 600;
 }
+
+
 
 @media (max-width: 920px) {
     .modal__inner__group {

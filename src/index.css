@@ -12,6 +12,7 @@
 :root {
   --main-background: #060d10;
   --text: #ebb128;
+  --error: #ff0000;
 }
 
 body {

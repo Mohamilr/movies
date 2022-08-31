@@ -14,10 +14,16 @@ const MovieCard = ({ movie, openPreviewModal, preview }) => {
     >
       <img src={Poster !== "N/A" ? Poster : fallbackImg} alt="movie poster" />
       <h2>{Title}</h2>
-      <div className="movie--meta__data">
-        <span>{Type}</span>
-        <span>{Year}</span>
-      </div>
+      {preview && (
+        <>
+          <p className="movie--plot">{movie?.Plot}</p>
+          <div className="movie--meta__data">
+            <span>Writer: {movie?.Writer}</span>
+            <span>Rating: {movie?.imdbRating}</span>
+            <span>Year: {movie?.Year}</span>
+          </div>
+        </>
+      )}
     </div>
   );
 };
