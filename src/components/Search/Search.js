@@ -34,6 +34,7 @@ const Search = ({ movies, setMovies, setStatus }) => {
 
   const debouncedSearch = useMemo(
     () => debounce((value) => searchMovies(value), 500),
+    //eslint-disable-next-line
     []
   );
 

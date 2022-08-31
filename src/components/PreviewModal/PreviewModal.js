@@ -15,7 +15,7 @@ const PreviewModal = ({
   const parentModal = useRef();
 
   window.onclick = function (event) {
-    if (event.target == parentModal?.current) {
+    if (event.target === parentModal?.current) {
       closeModal();
     }
   };
