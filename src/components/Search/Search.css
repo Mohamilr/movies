@@ -1,0 +1,22 @@
+@import "../../index.css";
+
+.search__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.search__container .search {
+    padding: 10px;
+    border: 2px solid var(--text);
+    outline: none;
+    border-radius: 5px;
+    width: 60%;
+}
+
+@media (max-width: 670px) {
+    .search__container .search {
+        width: 90%;
+    }
+}

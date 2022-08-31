@@ -1,0 +1,48 @@
+@import "../../index.css";
+
+.movie__card {
+    box-shadow: 1px 3px 4px var(--text);
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.movie__card img {
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+}
+
+.movie__card h2 {
+    color: var(--text);
+}
+
+.movie__card .movie--meta__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.movie__card .movie--meta__data span {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+
+@media (max-width: 500px) {
+    .movie__card {
+        width: 220px;
+    }
+    
+    .movie__card img {
+        width: 200px;
+        height: 245px;
+    }
+}

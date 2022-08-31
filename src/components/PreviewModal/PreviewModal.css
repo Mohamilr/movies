@@ -1,0 +1,63 @@
+@import "../../index.css";
+
+.modal__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  rgba(42, 39, 39, 0.8);
+}
+
+.modal__inner__group {
+    margin: 0 auto;
+    background: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+}
+
+.modal__content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.close__modal {
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.modal__content > span  {
+    cursor: pointer;
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+@media (max-width: 920px) {
+    .modal__inner__group {
+        width: 70%;
+    }
+}
+
+@media (max-width: 670px) {
+    .modal__inner__group {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal__content {
+        margin-top: 20px;
+    }
+}

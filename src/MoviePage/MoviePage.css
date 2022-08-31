@@ -1,0 +1,7 @@
+@import "../index.css";
+
+.time__spent {
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 600;
+}
