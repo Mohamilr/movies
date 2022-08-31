@@ -10,7 +10,7 @@ function getTimeSpentOnSite() {
 
 export function startCounting(setTimeSpent) {
   timerStart = Date.now();
-  timer = setInterval(function () {
+  setInterval(function () {
     timeSpentOnSite = getTimeSpentOnSite() + (Date.now() - timerStart);
     localStorage.setItem("timeSpentOnSite", timeSpentOnSite);
     timerStart = parseInt(Date.now());

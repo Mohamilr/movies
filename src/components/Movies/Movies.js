@@ -53,9 +53,9 @@ const Movies = () => {
       case "error":
         return <p className="status">An error occurred, kindly retry.</p>;
       case "too-many-results":
-        return <p className="status">Be more specific on the movie name</p>;
+        return <p className="status">Be more specific on the movie title.</p>;
       case "movie-not-found":
-        return <p className="status">Oops.., couldn't find your movie</p>;
+        return <p className="status">Oops.., couldn't find your movie.</p>;
       default:
         return <p className="status">Search your favorite movies...</p>;
     }
