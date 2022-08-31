@@ -31,7 +31,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 430px) {
     .movies__container {
         width: 220px;
     }

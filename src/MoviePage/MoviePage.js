@@ -3,7 +3,7 @@ import Movies from "../components/Movies/Movies";
 import { startCounting } from "../utils/helper";
 import "./MoviePage.css";
 
-const MoviePage = ({}) => {
+const MoviePage = () => {
   const [timeSpent, setTimeSpent] = useState(0);
 
   useEffect(() => {

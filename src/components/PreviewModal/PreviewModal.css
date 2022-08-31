@@ -56,7 +56,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 430px) {
     .modal__content {
         margin-top: 20px;
     }
