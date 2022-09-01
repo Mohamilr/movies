@@ -12,6 +12,7 @@ export function startCounting(setTimeSpent) {
   setInterval(function () {
     timeSpentOnSite = getTimeSpentOnSite() + (Date.now() - timerStart);
     localStorage.setItem("timeSpentOnSite", timeSpentOnSite);
+    timerStart = parseInt(Date.now());
 
     setTimeSpent(parseInt(timeSpentOnSite / 60000));
   }, 1000);
